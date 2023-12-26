@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.75rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+  --font-medium: 500;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+body {
+  color: var(--black-color);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: 10fr; */
+  align-items: center;
+}
+.background__img {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.dialog__form {
+  position: relative;
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: transparent;
+  /* border: 2px solid var(--white-color); */
+  margin-inline: 1.5rem;
+  padding: 1.5rem 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+.dialog__title {
+  text-align: left;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 100%;
+}
+.dialog__text {
+  text-align: left;
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+}
+.dialog__out__text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+}
+.dialog__content, .dialog__box {
+  display: grid;
+}
+.dialog__content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.dialog__box {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid var(--black-color);
+}
+.dialog__icon, .dialog__eye {
+  font-size: 1.25rem;
+}
+.dialog__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: var(--black-color);
+  position: relative;
+  z-index: 1;
+}
+.dialog__box-input {
+  position: relative;
+}
+.dialog__label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: var(--font-medium);
+  transition: top 0.3s, font-size 0.3s;
+}
+.dialog__box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+.dialog__check, .dialog__check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dialog__check {
+  margin-bottom: 1.5rem;
+}
+.dialog__check-label, .dialog__forgot, .dialog__register {
+  font-size: var(--small-font-size);
+}
+.dialog__check-group {
+  column-gap: 0.5rem;
+}
+.dialog__check-input {
+  width: 16px;
+  height: 16px;
+}
+.dialog__forgot {
+  color: var(--black-color);
+}
+.dialog__forgot:hover {
+  text-decoration: underline;
+}
+.dialog__button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  color: black;
+  /* background-color: var(--black-color); */
+  background-color:hsla(0, 0%, 10%, 0.1);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.dialog__button:hover {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  color: black;
+  /* background-color: var(--black-color); */
+  background-color: transparent;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.dialog__fileButton {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  color: black;
+  /* background-color: var(--black-color); */
+  background-color: hsla(0, 0%, 10%, 0.1);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.dialog__fileButton:hover {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+  color: black;
+  /* background-color: var(--black-color); */
+  background-color: transparent;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  text-align: center;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.dialog__iconbutton {
+  width: 3vw;
+  height: 3vw;
+  position: relative; 
+  top: -50%;
+  right: -30%;
+  /* left: 90%;
+  z-index: -1; */
+}
+
+.dialog__icon {
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin: 0;
+}
+.dialog__register {
+  text-align: center;
+}
+.dialog__register a {
+  color: var(--black-color);
+  font-weight: var(--font-medium);
+}
+.dialog__register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.dialog__input:focus + .dialog__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+
+/* Input focus sticky top label */
+.dialog__input:not(:placeholder-shown).dialog__input:not(:focus) + .dialog__label {
+  top: -12px;
+  font-size: var(--small-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .page {
+    justify-content: right;
+  }
+  .dialog__form {
+    /* width: 35vw; */
+    width: 800px;
+    /* background-image: url(https://media4.giphy.com/media/6hEyKlPcFeCfnDhvmm/giphy.gif);
+    background-size: cover; */
+    /* height: 70%; */
+    padding: 4rem 3rem 3rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+  .dialog__title {
+    font-size: 2rem;
+  }
+}

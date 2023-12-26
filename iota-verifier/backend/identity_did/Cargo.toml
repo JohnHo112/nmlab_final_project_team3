@@ -1,0 +1,29 @@
+[package]
+name = "identity_did"
+version = "1.0.0"
+authors.workspace = true
+edition = "2021"
+homepage.workspace = true
+keywords = ["iota", "tangle", "identity", "did"]
+license.workspace = true
+readme = "./README.md"
+repository.workspace = true
+description = "Agnostic implementation of the Decentralized Identifiers (DID) standard."
+
+[dependencies]
+did_url = { version = "0.1", default-features = false, features = ["std", "serde"] }
+form_urlencoded = { version = "1.2.0", default-features = false, features = ["alloc"] }
+identity_core = { version = "=1.0.0", path = "../identity_core" }
+serde.workspace = true
+strum.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+proptest = { version = "1.0" }
+serde_json.workspace = true
+
+[package.metadata.docs.rs]
+# To build locally:
+# RUSTDOCFLAGS="--cfg docsrs" cargo +nightly doc --all-features --no-deps --workspace --open
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

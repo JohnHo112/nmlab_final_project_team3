@@ -1,0 +1,224 @@
+
+.card.custom-class {
+  color:#fefbfb;
+  background-color: rgba(180, 180, 180, 0.4);
+  width: 25rem;
+  height: 12rem;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 500;
+  left: 9rem;
+}
+.login_container{
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  color: #ffffff;
+  
+}
+.card.DID_card{
+  background-color: rgba(54, 127, 176, 0.474);
+  width: 25rem;
+  position: absolute;
+  top: -3rem;
+  left: 40rem;
+}
+#login{
+  position: relative;
+  top: 6rem;
+  left: 13.65rem;
+}
+#home_button{
+  background-color: rgba(252, 252, 252, 0.3);
+  font-size: large;
+  font-weight: 600;
+  color: #F2F5FB;
+  border-color: #e3e3e3;
+  margin-top: 5rem;
+  width: 43rem;
+  height: 3rem;
+  
+}
+#home_button:hover{
+  background-color: #3873a7;
+  font-size: large;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #3873a7;
+}
+.form{
+  background-color: #3c39ff;
+  color: #ff3939;
+}
+#toggle_button{
+  position: absolute;
+  left: 6rem;
+  top: 6.9rem;
+  color: #f7f7f7;
+}
+#toggle_button_vp{
+  position: absolute;
+  left: 6rem;
+  top: 6rem;
+  color: #f7f7f7;
+}
+#link-button button{
+  width: 18rem;
+}
+#create_button{
+  width: 20rem;
+  color: #F2F5FB;
+}
+#errorMessage{
+  color: #ff0000;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 23rem;
+  left: -2.5rem;
+}
+#success{
+  position: relative;
+  left: 9rem;
+  color: #00E0CA;
+  font-size: 1.8rem;
+}
+/* TODO: */
+#DID-vp {
+  position: absolute;
+  top: 0rem;
+  left: 5rem;
+  display: flex;
+  border: none;
+}
+#DID-create {
+  position: absolute;
+  top: -5rem;
+  left: 5rem;
+  display: flex;
+  border: none;
+}
+#display-card {
+  width: 34rem;
+  height: 40rem;
+  left: -9rem;
+  top: -1.5rem;
+  background-color: rgba(150, 150, 150, 0.0);
+  border: none;
+  /* overflow: scroll; */
+}
+#DID-create p{
+  font-size: 1.2rem;
+  font-weight:500;
+  font-family: 'Metropolis', sans-serif;
+  border: none;
+  color: #fefbfb;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+#DID-create h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  color: #F2F5FB;
+}
+#DID-vp p{
+  font-size: 1.2rem;
+  font-weight:500;
+  font-family: 'Metropolis', sans-serif;
+  border: none;
+  color: #fefbfb;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+#DID-vp h1{
+  margin-top: 10px;
+  margin-left: 30px;
+  color: #F2F5FB;
+}
+
+#instruction {
+  position: relative;
+  top : 6.2rem;
+}
+#instruction h1{
+  color: #f7f7f7;
+  margin-bottom: 3rem;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 600;
+}
+
+
+#show_pass{
+  position: absolute;
+  top:8rem;
+  left: 13rem;
+}
+#download{
+  position: relative;
+  left: 20px;
+}
+
+
+.App-header {
+  background-color: rgb(0, 0, 0, 0.7);
+  min-height: 17vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.nav .nav-link {
+  color: #f7f7f7;
+  font-size: 17px;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 500;                                         
+}
+.nav .nav-link:hover{
+  color: #0FC1B7;
+}
+
+
+.position-relative{
+  top: 4rem;
+  left: 10rem;
+}
+.App-header h1{
+  position: relative;
+  top: 4px;
+  left: 2rem;
+  font-size: 30px;
+  color: white;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 600;
+}
+.App-header img{
+  position: relative;
+  left: 7rem;
+}
+
+
+
+.App{
+  background-image: url(./images/iota-bg-5.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#input-bordered{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#json-word{
+  color: #000000;
+  background-color: #020082;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Metropolis', sans-serif;
+}

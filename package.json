@@ -1,0 +1,12 @@
+{
+  "name": "nmlab_final_project",
+  "version": "1.0.0",
+  "description": "```\r cd iota-holder\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-all-packages": "cd iota-holder && npm run install-holder-frontend && npm run install-holder-backend && cd .. && cd iota-issuer && npm run install-issuer-frontend && npm run install-issuer-backend && cd .. && cd iota-verifier && npm run install-verifier-frontend && npm run install-verifier-backend && cd .."
+  },
+  "author": "",
+  "license": "ISC"
+}

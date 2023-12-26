@@ -1,0 +1,15 @@
+{
+  "name": "iota-holder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-holder-frontend": "cd frontend && yarn install && cd ..",
+    "install-holder-backend": "cd backend/bindings/wasm/examples && npm install && npm run build",
+    "holder-frontend": "cd frontend && yarn start",
+    "holder-backend": "cd backend/bindings/wasm && npm run start"
+  },
+  "author": "",
+  "license": "ISC"
+}

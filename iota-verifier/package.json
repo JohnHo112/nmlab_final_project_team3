@@ -1,0 +1,16 @@
+{
+  "name": "iota-verifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-verifier-frontend": "cd frontend && pnpm install && cd ..",
+    "install-verifier-backend": "cd backend/bindings/wasm/examples && npm install && npm run build",
+    "verifier-frontend": "cd frontend && pnpm run dev",
+    "verifier-backend": "cd backend/bindings/wasm && npm run start"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
